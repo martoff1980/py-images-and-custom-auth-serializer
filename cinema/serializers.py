@@ -13,14 +13,12 @@ from cinema.models import (
 
 
 class GenreSerializer(serializers.ModelSerializer):
-    # genres = serializers.StringRelatedField(many=True)
     class Meta:
         model = Genre
         fields = ("id", "name", "genres")
 
 
 class ActorSerializer(serializers.ModelSerializer):
-    # actors = serializers.StringRelatedField(many=True)
 
     class Meta:
         model = Actor
