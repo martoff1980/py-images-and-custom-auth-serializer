@@ -104,7 +104,7 @@ class MovieViewSet(
             return MovieDetailSerializer
 
         return MovieSerializer
-    
+
     @action(
         methods=["POST"],
         detail=True,
@@ -120,6 +120,7 @@ class MovieViewSet(
             return Response(serializer.data, status=status.HTTP_200_OK)
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
 
 class MovieSessionViewSet(viewsets.ModelViewSet):
     queryset = (
