@@ -20,7 +20,7 @@ class GenreSerializer(serializers.ModelSerializer):
 
 
 class ActorSerializer(serializers.ModelSerializer):
-    actors = serializers.StringRelatedField(many=True)
+    # actors = serializers.StringRelatedField(many=True)
 
     class Meta:
         model = Actor
